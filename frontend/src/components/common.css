@@ -1,0 +1,129 @@
+/* General Container */
+.signup-container {
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 20px;
+  background: linear-gradient(145deg, #1a1a1a, #2a2a2a);
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+  text-align: center;
+}
+
+/* Title */
+.signup-title {
+  color: #ffffff;
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+/* Error Message */
+.error-message {
+  color: #ff4d6d;
+  margin-bottom: 15px;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+/* Form */
+.signup-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Form Group */
+.form-group {
+  text-align: left;
+}
+
+.form-group label {
+  color: #b3b3b3;
+  display: block;
+  margin-bottom: 5px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.form-control {
+  width: 100%;
+  padding: 12px;
+  border-radius: 6px;
+  border: 1px solid #1db954;
+  background-color: #252525;
+  color: #ffffff;
+  font-size: 15px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.form-control:focus {
+  border-color: #1ed760;
+  box-shadow: 0 0 6px rgba(29, 185, 84, 0.6);
+}
+
+.form-control::placeholder {
+  color: #777777;
+}
+
+/* Submit Button */
+.submit-button {
+  background-color: #1db954;
+  color: #ffffff;
+  border: none;
+  padding: 12px;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.submit-button:hover {
+  background-color: #1ed760;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(29, 185, 84, 0.5);
+}
+
+.submit-button:active {
+  transform: translateY(0);
+  box-shadow: none;
+}
+
+/* Sign-In Redirect Button */
+.signin-redirect-button {
+  background-color: transparent;
+  color: #1db954;
+  border: none;
+  font-size: 16px;
+  margin-top: 15px;
+  text-decoration: underline;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.signin-redirect-button:hover {
+  color: #1ed760;
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+  .signup-container {
+    margin: 20px;
+    padding: 15px;
+  }
+
+  .signup-title {
+    font-size: 24px;
+  }
+
+  .submit-button, .form-control {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .signin-redirect-button {
+    font-size: 14px;
+  }
+}
